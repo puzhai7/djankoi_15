@@ -11,7 +11,7 @@ const CardList = () => {
         async function fetchData() {
             setIsLoading(true)
             const response = await PostService.getAllUsers();
-            setUsers([...users, ...response.data])
+            setUsers(() => [...users, ...response.data])
             setIsLoading(false)
         }
         fetchData();

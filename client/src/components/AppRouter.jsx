@@ -13,7 +13,7 @@ const AppRouter = () => {
                     key={route.path}
                 />
             )}
-            <Route path="*" element={<Navigate to="/about" />} />
+            <Route path="*" element={<Navigate to="/user" />} />
         </Routes>
     );
 };

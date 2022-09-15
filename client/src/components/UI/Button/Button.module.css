@@ -1,0 +1,29 @@
+.btn {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #fff;
+    color: rgba(255, 255, 255, 0.0);
+    border-radius: 20px;
+    background: none;
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    animation: backhover 1s forwards;
+}
+
+@keyframes backhover {
+    0% {
+        background: rgba(255, 255, 255, 0.0);
+        color: rgba(255, 255, 255, 0.0);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 1.0);
+    }
+}

@@ -1,7 +1,12 @@
 import axios from "axios";
+import server_config from '../ip.server.json'
 
-const host = '192.168.0.210';
-const port = '8080';
+// const ip_config_client = fs.readFileSync(); 
+
+console.log(server_config)
+
+const host = server_config.host;
+const port = server_config.port;
 
 export default class PostService {
 

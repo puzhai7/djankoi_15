@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const host = 'localhost';
+const host = '192.168.0.210';
 const port = '8080';
 
 export default class PostService {

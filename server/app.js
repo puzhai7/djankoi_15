@@ -11,7 +11,7 @@ app.use(express.json())
 app.use((req, res, next) => {
     res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.append('Access-Control-Allow-Headers', 'Content-Type');
-    res.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.append('Access-Control-Allow-Origin', 'http://192.168.0.210:3000');
     next();
 });
 app.use('/api', userRouter)
